@@ -15,7 +15,7 @@
     <script src="https://static.gogy.com/assets/games/dunk-balls-v2/TemplateData/UnityProgress.js"></script>
     <script src="https://static.gogy.com/assets/games/dunk-balls-v2/Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/dunk_balls_gogy_v2.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "https://static.gogy.com/assets/games/dunk-balls-v2/Build/dunk_balls_gogy_v2.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
       function openInNewTab() {
             url = 'https://www.gogy.com?utm_source=FlappyDunk&utm_medium=GoGyBottomBar&utm_campaign=UnBrandedGames';
             var win = window.open(url, '_blank');
